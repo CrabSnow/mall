@@ -2,7 +2,7 @@ spring:
   application:
     name: mall-admin
   profiles:
-    active: dev #默认为开发环境
+    active: prod #默认为开发环境
   servlet:
     multipart:
       enabled: true #开启文件上传
@@ -65,3 +65,5 @@ minio:
   bucketName: mall #存储桶名称
   accessKey: minioadmin #访问的key
   secretKey: minioadmin #访问的秘钥
+
+  server.address : 0.0.0.0
